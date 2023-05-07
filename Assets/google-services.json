@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "938838173224",
+    "project_id": "universitynavigator-674e5",
+    "storage_bucket": "universitynavigator-674e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938838173224:android:577950f2093e4d2d87f71d",
+        "android_client_info": {
+          "package_name": "com.TISBI.UniversityNavigator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938838173224-bf3q9motij789q5kba36j80hg2d4c362.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVkfvXeAzuTqmm94An4nVYKE1RT7iaNgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938838173224-bf3q9motij789q5kba36j80hg2d4c362.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
