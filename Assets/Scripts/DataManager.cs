@@ -4,7 +4,9 @@ public static class DataManager
 {
     public static void Delete()
     {
-       PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey("PositionX");
+        PlayerPrefs.DeleteKey("PositionY");
+        PlayerPrefs.DeleteKey("PositionZ");
     }
     public static void SaveCoordinates(float x, float y, float z)
     {
@@ -23,5 +25,25 @@ public static class DataManager
     public static float LoadPositionZ()
     {
         return PlayerPrefs.GetFloat("PositionZ", 0);
+    }
+
+    public static void SaveCredo(string role, string login, string password)
+    {
+        PlayerPrefs.SetString("AuthorizationRole", role);
+        PlayerPrefs.SetString("AuthorizationLogin", login);
+        PlayerPrefs.SetString("AuthorizationPassword", password);
+        PlayerPrefs.Save();
+    }
+    public static string LoadCredoRole()
+    {
+        return PlayerPrefs.GetString("AuthorizationRole", "");
+    }
+    public static string LoadCredoLogin()
+    {
+        return PlayerPrefs.GetString("AuthorizationLogin", "");
+    }
+    public static string LoadCredoPassword()
+    {
+        return PlayerPrefs.GetString("AuthorizationPassword", "");
     }
 }

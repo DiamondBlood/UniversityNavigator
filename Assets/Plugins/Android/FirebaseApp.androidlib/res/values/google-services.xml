@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/firebase_database_url,@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_android_client_id,@string/default_web_client_id">
+  <string name="firebase_database_url" translatable="false">https://universitynavigator-674e5-default-rtdb.europe-west1.firebasedatabase.app</string>
+  <string name="gcm_defaultSenderId" translatable="false">938838173224</string>
+  <string name="google_storage_bucket" translatable="false">universitynavigator-674e5.appspot.com</string>
+  <string name="project_id" translatable="false">universitynavigator-674e5</string>
+  <string name="google_api_key" translatable="false">AIzaSyBVkfvXeAzuTqmm94An4nVYKE1RT7iaNgk</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBVkfvXeAzuTqmm94An4nVYKE1RT7iaNgk</string>
+  <string name="google_app_id" translatable="false">1:938838173224:android:1a9e2a41556a0a7287f71d</string>
+  <string name="default_android_client_id" translatable="false">938838173224-l2nmieq7thbtigpt82npbnpvbh1jvgmv.apps.googleusercontent.com</string>
+  <string name="default_web_client_id" translatable="false">938838173224-bf3q9motij789q5kba36j80hg2d4c362.apps.googleusercontent.com</string>
+  <string name="default_notification_channel_id">my_notification_channel</string>
+</resources>

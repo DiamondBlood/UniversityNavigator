@@ -14,7 +14,7 @@ public class PathDrawer : MonoBehaviour
     private NavMeshAgent _navMeshAgent;
     private LineRenderer _lineRenderer;
 
-    private void Start()
+    public void Initialize()
     {
         _clickMarker = Instantiate(_clickMarkerPrefab);
         _visualObjectsParent = GameObject.Find("VisualObjectsParent").GetComponent<Transform>();
@@ -24,8 +24,6 @@ public class PathDrawer : MonoBehaviour
         _lineRenderer.endWidth = 0.3f;
         _lineRenderer.positionCount = 0;
     }
-
-
     public void SetPoint(Vector3 touchPosition)
     {
         _clickMarker.SetActive(true);

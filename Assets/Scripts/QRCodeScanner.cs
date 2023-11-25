@@ -1,6 +1,5 @@
 using UnityEngine;
 using ZXing;
-using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -8,7 +7,6 @@ public class QRCodeScanner : MonoBehaviour
 {
     [SerializeField] private RawImage _rawImageBackground;
     [SerializeField] private AspectRatioFitter _aspectRatioFilter;
-    [SerializeField] private TextMeshProUGUI _textOut;
     [SerializeField] private RectTransform _scanZone;
 
     private bool _isCamAvailable;
@@ -29,19 +27,23 @@ public class QRCodeScanner : MonoBehaviour
     private void SetUpCamera()
     {
         WebCamDevice[] devices = WebCamTexture.devices;
-        if (devices.Length==0)
+        if (devices.Length == 0)
         {
             _isCamAvailable = false;
             return;
         }
         for (int i = 0; i < devices.Length; i++)
         {
-            if (devices[i].isFrontFacing==false)
-            _cameraTexture = new WebCamTexture(devices[i].name, (int)_scanZone.rect.width, (int)_scanZone.rect.height);
+            if (devices[i].isFrontFacing == false)
+            {
+                int desiredWidth = 1080; 
+                int desiredHeight = 1920;
+                _cameraTexture = new WebCamTexture(devices[i].name, desiredWidth, desiredHeight);
+            }
         }
         _cameraTexture.Play();
         _rawImageBackground.texture = _cameraTexture;
-        _isCamAvailable= true;
+        _isCamAvailable = true;
     }
 
     private void UpdateCameraRender()
